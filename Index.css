@@ -1,0 +1,284 @@
+* { 
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    max-width: 1200px;
+}
+
+ .logo { 
+    width: 40%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-decoration:none;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 40px 30px;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.imagen {
+    display: flex;
+    margin: 10px 300px;
+    border-radius: 20px;
+    /* width: 100%; */
+}
+
+h2 {
+    font-family: cursive;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.contenedor-caf {
+    height: 250px;
+    width: 1000px;
+    display: flex;
+    flex-direction:row;
+    background-color:  rgb(241, 224, 202);
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0 100px;
+}
+
+.contenedor-nos {
+    height: 250px;
+    width: 1000px;
+    display: flex; 
+    background-color:  rgb(241, 224, 202);
+    padding: 20px;
+    border-radius: 30px;
+    margin: 0 100px;
+}
+
+.imgcontenedor {
+    width: 350px; 
+    height: 250px;
+    border-radius: 20px;
+}
+
+.text {
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+.list {
+    list-style-type:none;
+}
+
+.textcenter {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.redes {
+    display:flex;
+    padding: 20px;
+    margin-left: 45%;
+}
+
+#icono { 
+    width: 40px;
+    height: 40px;
+ }
+ 
+.footer {
+    background-color:  rgb(241, 224, 202);
+    height: 250px;
+    width: 1200px;
+    color: black;
+    font-size: small;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-item {
+    padding:10px;
+}
+
+/*Página Menú*/
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px; 
+    padding: 5px;
+}
+
+th {
+    background-color:  rgb(158, 90, 90);
+    color: rgb(17, 16, 15);
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer
+}
+
+/*pagina servicios*/
+.conteiner {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.card {
+    width: 330px;
+    height: 350px;
+    border-radius: 8px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgb(158, 90, 90);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+/*grid-area imagenes index*/
+.img {
+    display: grid;
+    margin: 10px;
+    grid-template-areas: 
+    ". imga . imgb ."
+    "imgg . imgc . imgd"
+    ". imge . imgf ."
+}
+
+.img__a {
+    grid-area: imga;
+}
+
+.img__b {
+    grid-area: imgb;
+}
+
+.img__c {
+    grid-area: imgc;
+}
+
+.img__d {
+    grid-area: imgd;
+}
+
+.img__e {
+    grid-area: imge;
+}
+
+.img__f {
+    grid-area: imgf;
+}
+
+.img__g {
+    grid-area: imgg;
+}
+
+span {
+    display: none;
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .img {
+        grid-template-areas: 
+        " imga imgb"
+        " imgg imgc"
+        " imge imgd"
+        " imgf .";
+        justify-content: center;
+    }
+    
+    header {
+        flex-direction: column;
+    }
+
+    .conteiner {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width:30%;
+    }
+    .imagen { 
+        display: flex;
+        margin: 20px 150px;
+        border-radius: 20px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .ul {
+        margin: 20px;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .contenedor-caf {
+        width: 100%;
+    }
+
+    .contenedor-nos {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .ul {
+        display: none;
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+        background-image: none;
+        width: 100%; 
+    }
+
+    p {
+        font-size:10px;
+    }
+}
+
