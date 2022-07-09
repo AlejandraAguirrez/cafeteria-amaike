@@ -130,8 +130,6 @@ h2 {
     margin: 40px;
 }
 
-
- 
 .footer {
         width: 100%;
         padding: 20px;
@@ -140,7 +138,8 @@ h2 {
 
 /*Página Menú*/
 .menu {
-    margin: 20px 200px;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 table {
     width: 50%;
@@ -227,7 +226,7 @@ tr:hover {
 
 @media (max-width: 480px) {
     p {
-        font-size:10px;
+        font-size:15px;
     }
 }
 }
